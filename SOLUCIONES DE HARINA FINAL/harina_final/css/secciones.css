@@ -1,0 +1,76 @@
+/* ================================================
+   SOLUCIONES DE HARINA — secciones.css
+   ================================================ */
+
+/* TRABAJA */
+#trabaja{background:linear-gradient(180deg,var(--crema2) 0%,var(--crema) 100%)}
+.vc2{background:#fff;border-radius:18px;padding:2rem;box-shadow:var(--s1);transition:var(--t);border-left:5px solid transparent;display:flex;flex-direction:column;gap:.9rem}
+.vc2:hover{border-left-color:var(--dorado);transform:translateX(7px);box-shadow:var(--s2)}
+.vh{display:flex;align-items:flex-start;justify-content:space-between;gap:.9rem}
+.va{display:inline-flex;align-items:center;gap:5px;background:linear-gradient(135deg,rgba(212,160,23,.14),rgba(232,103,10,.09));color:var(--cafe);padding:.28rem .85rem;border-radius:50px;font-size:.78rem;font-weight:800}
+.vd{font-size:.88rem;color:#6b4c34}
+.vf{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.7rem;margin-top:.4rem}
+.vm{display:flex;gap:.9rem;flex-wrap:wrap}
+.vm span{font-size:.79rem;color:var(--cafe2);display:flex;align-items:center;gap:3px}
+.egrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(175px,1fr));gap:1.8rem;margin-bottom:2.5rem}
+.ec{background:#fff;border-radius:18px;padding:1.8rem 1.4rem;text-align:center;box-shadow:var(--s1);transition:var(--t);cursor:pointer}
+.ec:hover{transform:translateY(-9px) scale(1.03);box-shadow:var(--s2)}
+.ef{width:90px;height:90px;border-radius:50%;margin:0 auto 1rem;background:linear-gradient(135deg,var(--dorado),var(--naranja));display:flex;align-items:center;justify-content:center;font-size:2.3rem;overflow:hidden;border:4px solid var(--crema2);transition:var(--t);box-shadow:0 7px 22px rgba(212,160,23,.28)}
+.ef img{width:100%;height:100%;object-fit:cover;border-radius:50%}
+.ec:hover .ef{border-color:var(--dorado);transform:scale(1.05) rotate(3deg)}
+.ec h4{font-size:.97rem;color:var(--cafe);margin-bottom:.3rem}
+.ec p{font-size:.8rem;color:var(--cafe2)}
+.baf{width:100%;padding:1.4rem;border:2.5px dashed var(--dorado);border-radius:18px;background:rgba(212,160,23,.04);cursor:pointer;text-align:center;transition:var(--t);color:var(--cafe);font-weight:700;font-size:.95rem;display:flex;align-items:center;justify-content:center;gap:9px;font-family:'Nunito',sans-serif}
+.baf:hover{background:rgba(212,160,23,.11);border-color:var(--naranja);transform:scale(1.01)}
+
+/* RECLAMOS */
+#reclamos{background:linear-gradient(180deg,var(--crema2) 0%,var(--crema) 100%)}
+.tgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(155px,1fr));gap:1rem;margin-bottom:2.2rem}
+.tb{padding:1.1rem;border-radius:14px;border:2.5px solid var(--crema2);background:#fff;cursor:pointer;text-align:center;transition:var(--t);font-family:'Nunito',sans-serif;user-select:none}
+.tb:hover{border-color:rgba(212,160,23,.5);background:rgba(212,160,23,.06);transform:translateY(-3px)}
+.tb.sel{border-color:var(--dorado);background:linear-gradient(135deg,rgba(212,160,23,.1),rgba(232,103,10,.07));transform:translateY(-4px);box-shadow:0 6px 18px rgba(212,160,23,.22)}
+.tb .ti{font-size:1.9rem;display:block;margin-bottom:.45rem}
+.tb .tl{font-size:.82rem;font-weight:800;color:var(--cafe)}
+.radbox{background:linear-gradient(135deg,var(--cafe),#3a1a08);color:var(--crema);padding:1.1rem 1.8rem;border-radius:14px;display:none;align-items:center;gap:1rem;margin-bottom:1.8rem;box-shadow:var(--s1);animation:fu .5s ease}
+.radbox.vis{display:flex}
+.radbox strong{font-size:1.1rem;font-family:'Playfair Display',serif}
+
+/* PQR */
+#pqr{background:var(--crema)}
+.ptabs{display:flex;gap:.5rem;margin-bottom:1.8rem;flex-wrap:wrap}
+.ptab{padding:.65rem 1.6rem;border-radius:50px;font-weight:800;font-size:.85rem;cursor:pointer;border:2.5px solid transparent;transition:var(--t);background:#fff;color:var(--cafe);box-shadow:0 2px 8px rgba(107,58,31,.07)}
+.ptab.on{background:linear-gradient(135deg,var(--dorado),var(--naranja));color:#fff;box-shadow:0 6px 18px rgba(212,160,23,.38)}
+.ptab:hover:not(.on){border-color:var(--dorado);transform:translateY(-2px)}
+.pdesc{background:linear-gradient(135deg,rgba(212,160,23,.1),rgba(232,103,10,.06));border:1.5px solid rgba(212,160,23,.24);border-radius:14px;padding:1.3rem 1.6rem;margin-bottom:2rem;transition:var(--t)}
+.pdesc p{font-size:.93rem;color:var(--cafe)}
+.tracker{background:#fff;border-radius:18px;padding:2rem;box-shadow:var(--s1);margin-top:2.8rem}
+.tracker h4{margin-bottom:1.3rem}
+.tsteps{display:flex;align-items:center}
+.ts{flex:1;text-align:center;position:relative}
+.ts::before{content:'';position:absolute;top:19px;left:-50%;right:50%;height:2px;background:var(--crema2)}
+.ts:first-child::before{display:none}
+.tc{width:38px;height:38px;border-radius:50%;background:var(--crema2);margin:0 auto .45rem;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.85rem;position:relative;z-index:1;transition:var(--t)}
+.ts.done .tc{background:var(--dorado);color:#fff}
+.ts.cur .tc{background:linear-gradient(135deg,var(--dorado),var(--naranja));color:#fff;animation:lp 1.5s ease-in-out infinite}
+@keyframes lp{0%,100%{box-shadow:0 0 0 0 rgba(212,160,23,.4)}50%{box-shadow:0 0 0 9px rgba(212,160,23,0)}}
+.ts p{font-size:.72rem;color:var(--cafe2);font-weight:600}
+
+/* CONTACTO */
+#contacto{background:var(--crema)}
+.cgrid{display:grid;grid-template-columns:1fr 1.4fr;gap:3.5rem;align-items:start}
+.ii{display:flex;gap:1.1rem;align-items:flex-start;margin-bottom:1.8rem}
+.iic{width:50px;height:50px;border-radius:14px;flex-shrink:0;background:linear-gradient(135deg,var(--dorado),var(--naranja));display:flex;align-items:center;justify-content:center;font-size:1.25rem;box-shadow:0 6px 18px rgba(212,160,23,.28);transition:var(--t)}
+.ii:hover .iic{transform:rotate(-8deg) scale(1.1)}
+.iit h4{font-size:.97rem;color:var(--cafe);margin-bottom:.28rem}
+.iit p{font-size:.87rem;color:var(--cafe2)}
+.iit a{color:var(--naranja);font-weight:700}
+.iit a:hover{text-decoration:underline}
+.mapbtn{width:100%;height:180px;border-radius:14px;background:linear-gradient(135deg,var(--cafe),var(--cafe2));display:flex;align-items:center;justify-content:center;font-size:3rem;margin-top:1.3rem;box-shadow:var(--s1);cursor:pointer;transition:var(--t);text-decoration:none}
+.mapbtn:hover{transform:scale(1.02);box-shadow:var(--s2)}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .cgrid{grid-template-columns:1fr}
+  .tsteps{flex-direction:column;gap:1rem}
+  .ts::before{display:none}
+}
